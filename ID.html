@@ -1,11 +1,135 @@
-<h1>ME – Identität</h1>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>GONE – ID‑Modul</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<pre>
-CORE = ME
-VERSION = 1.0
-CODE = RAW
-LAGE = Körper / RESPO / Public
-STATUS = aktiv
-IDENTITY = MeineEbene
-EDIT = offen
-</pre>
+<style>
+  body {
+    background: #000;
+    color: #e6e6e6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+    color: #ff4444;
+    font-size: 34px;
+    letter-spacing: 3px;
+  }
+
+  .panel {
+    margin: 20px;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    border: 1px solid #333;
+  }
+
+  .panel h2 {
+    color: #00eaff;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 14px;
+    background: #00eaff;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  .btn:hover {
+    background: #00bcd4;
+    transform: scale(1.05);
+  }
+
+  #live {
+    margin: 20px;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    border: 1px solid #333;
+    color: #ffdd00;
+    white-space: pre-wrap;
+  }
+</style>
+
+<script src="GEO.physik.js"></script>
+<script src="GEO.geo.js"></script>
+<script src="NC.engine.js"></script>
+<script src="dyn.js"></script>
+<script src="sure.stand.js"></script>
+<script src="zen.stand.js"></script>
+<script src="hardware.stand.js"></script>
+<script src="neo.lauf.js"></script>
+<script src="gone.js"></script>
+
+</head>
+
+<body>
+
+<h1>GONE – Identitäts‑Modul</h1>
+
+<div class="panel">
+  <h2>Navigation</h2>
+  <a class="btn" href="index.html">Start</a>
+  <a class="btn" href="README.md">README</a>
+  <a class="btn" href="gone.js">GONE‑Code</a>
+</div>
+
+<div class="panel">
+  <h2>GONE‑Zustände</h2>
+  <button class="btn" onclick="runGone()">GONE</button>
+  <button class="btn" onclick="runBack()">BACK</button>
+</div>
+
+<div class="panel">
+  <h2>GEO‑Segmente</h2>
+  <button class="btn" onclick="showGeo('HY')">HY</button>
+  <button class="btn" onclick="showGeo('PE')">PE</button>
+  <button class="btn" onclick="showGeo('PER')">PER</button>
+  <button class="btn" onclick="showGeo('TRANS')">TRANS</button>
+  <button class="btn" onclick="showGeo('WARB')">WARB</button>
+  <button class="btn" onclick="showGeo('KANAL')">KANAL</button>
+  <button class="btn" onclick="showGeo('TMPa')">TMP‑α</button>
+  <button class="btn" onclick="showGeo('TMPb')">TMP‑β</button>
+  <button class="btn" onclick="showGeo('TMPg')">TMP‑γ</button>
+</div>
+
+<div id="live"></div>
+
+<script>
+  function runGone() {
+    const out = GONE();
+    document.getElementById("live").innerText =
+      "GONE‑Zustand:\n" + JSON.stringify(out, null, 2);
+  }
+
+  function runBack() {
+    const out = BACK(9);
+    document.getElementById("live").innerText =
+      "BACK‑Zustand:\n" + JSON.stringify(out, null, 2);
+  }
+
+  function showGeo(type) {
+    const geo = GEOG[type]();
+    document.getElementById("live").innerText =
+      "GEO‑Segment (" + type + "):\n" + JSON.stringify(geo, null, 2);
+  }
+
+  // Startanzeige
+  document.getElementById("live").innerText =
+    "GONE‑ID geladen.\nWähle GONE, BACK oder ein GEO‑Segment.";
+</script>
+
+</body>
+</html>
