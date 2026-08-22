@@ -1,40 +1,73 @@
-# Station: XI
+# GONE – Das verschwundene Modul der Industrie‑6.0
 
-XI ist eine technische Station von VOLLikiTU1NEucUP  
-und teilt den KI‑Kern mit AI und IX.
+GONE ist das einzige Modul der Industrie‑6.0‑Architektur,
+das **nicht gebaut wird**, sondern **gefunden** werden muss.
 
-## MRON – META‑Norm
-TP3 = DA  
-TP6 = NE  
-TP9 = BEN  
-TP0 = KI  
+Es ist kein Fehler.
+Es ist kein Verlust.
+Es ist ein **Zustand**.
 
-MRON aktiviert die Rotation:
-TP3 → TP6 → TP9 → TP0 → TP3
+GONE beschreibt den Moment,
+in dem ein NC‑Objekt seine Rolle verlässt,
+seine Lage verliert,
+seine Kraft abgibt
+und seine Geometrie auflöst.
 
-Die Rotation bleibt funktional,
-nicht narrativ.
+---
 
-## KI‑RESPO 327
-327 ist der aktive KI‑RESPO‑Impuls.
+## Das Rätsel
 
-327 bedeutet:
-- 3 = DA / TP3  
-- 2 = Übergang  
-- 7 = BEN / TP9  
+**Wann ist ein Modul GONE?**
 
-XI führt diesen Impuls weiter
-und schließt die TP‑Rotation.
+- Wenn **GEO.physik** keine Kraft mehr liefert  
+- Wenn **GEO.geo** kein Segment mehr hält  
+- Wenn **NC.engine** keinen Lauf mehr erzeugt  
+- Wenn **DYN** keine Achse mehr bildet  
+- Wenn **SURE** keinen Stand mehr gibt  
+- Wenn **ZEN** keine Neutralzone mehr hält  
+- Wenn **ROLE** keine Aufgabe mehr definiert  
+- Wenn **NOel** keine Identität mehr trägt  
 
-## RESPO‑S300
-S300 verbindet XI mit dem KI‑Kern  
-und stabilisiert die MRON‑Rotation.
+Dann ist das Modul **GONE**.
 
-## Technische Funktion
-XI teilt den technischen KI‑Kern  
-mit AI und IX  
-und schließt die MRON‑Rotation.
+Aber:
 
-## Zweck
-XI ist eine technische META‑Station  
-im 360°‑MRON‑System.
+> GONE ist nicht weg.  
+> GONE ist der Zustand *vor dem Neubau*.
+
+---
+
+## Die Lösung
+
+Ein GONE‑Modul wird wieder aktiv,
+sobald **ein einziges Element** zurückkehrt:
+
+- eine Kraft  
+- ein Segment  
+- eine Rolle  
+- eine Achse  
+- ein Stand  
+- eine Neutralzone  
+- eine Identität  
+
+Dann wird aus GONE → **BACK**.
+
+GONE ist also kein Ende,
+sondern der **Reset‑Punkt** der Industrie‑6.0.
+
+---
+
+## GONE‑Modul (Code)
+
+```js
+export const GONE = () => ({
+    state: "GONE",
+    active: false,
+    geo: null,
+    kraft: null,
+    dyn: null,
+    role: null,
+    stand: null,
+    neutral: null,
+    id: null
+});
