@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>NC‑LAGE‑SYSTEM – Multi‑Form Navigation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    background: #000;
+    color: #e6e6e6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+    color: #00eaff;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .module {
+    background: #111;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .module h2 {
+    margin: 0;
+    color: #00ff9d;
+  }
+
+  .module p {
+    margin: 6px 0;
+    font-size: 14px;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #00eaff;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .btn:hover {
+    background: #00bcd4;
+  }
+
+  .shape-panel {
+    margin: 20px;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    border: 1px solid #333;
+  }
+
+  .shape-panel h3 {
+    color: #ffdd00;
+  }
+
+  .shape-btn {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 16px;
+    background: #ffdd00;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .shape-btn:hover {
+    background: #c9b300;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>NC‑LAGE‑SYSTEM – Multi‑Form Navigation</h1>
+
+<!-- Raumformen -->
+<div class="shape-panel">
+  <h3>Raumformen</h3>
+  <a class="shape-btn" href="matrix.html">Matrix</a>
+  <a class="shape-btn" href="pyramide.html">Pyramide</a>
+  <a class="shape-btn" href="cube.html">Würfel</a>
+  <a class="shape-btn" href="cylinder.html">Cylinder</a>
+  <a class="shape-btn" href="reorg.html">REORG‑Ableitung</a>
+  <a class="shape-btn" href="zoom.html">CACHE/ZOOM</a>
+  <a class="shape-btn" href="gpu.html">GPU/CPU‑Sim</a>
+</div>
+
+<!-- Module -->
+<div class="grid">
+
+  <div class="module">
+    <h2>ΔA – DA</h2>
+    <p>LAGE: Norden / Öffnung</p>
+    <p>NC‑Zeichen: ΔA</p>
+    <a class="btn" href="DA/X.room.IN">IN</a>
+    <a class="btn" href="DA/X.room.OUT">OUT</a>
+    <a class="btn" href="DA/X.room.CORE">CORE</a>
+  </div>
+
+  <div class="module">
+    <h2>NΞ – NE</h2>
+    <p>LAGE: Osten / Träger</p>
+    <p>NC‑Zeichen: NΞ</p>
+    <a class="btn" href="NE/X.room.IN">IN</a>
+    <a class="btn" href="NE/X.room.OUT">OUT</a>
+    <a class="btn" href="NE/X.room.CORE">CORE</a>
+  </div>
+
+  <div class="module">
+    <h2>βN – BEN</h2>
+    <p>LAGE: Süden / Vollender</p>
+    <p>NC‑Zeichen: βN</p>
+    <a class="btn" href="BEN/X.room.IN">IN</a>
+    <a class="btn" href="BEN/X.room.OUT">OUT</a>
+    <a class="btn" href="BEN/X.room.CORE">CORE</a>
+  </div>
+
+  <div class="module">
+    <h2>IX° – IX</h2>
+    <p>LAGE: Westen / Schieber</p>
+    <p>NC‑Zeichen: IX°</p>
+    <a class="btn" href="IX/X.room.IN">IN</a>
+    <a class="btn" href="IX/X.room.OUT">OUT</a>
+    <a class="btn" href="IX/X.room.CORE">CORE</a>
+  </div>
+
+  <div class="module">
+    <h2>XΙ – XI</h2>
+    <p>LAGE: NW / Schließer</p>
+    <p>NC‑Zeichen: XΙ</p>
+    <a class="btn" href="XI/X.room.IN">IN</a>
+    <a class="btn" href="XI/X.room.OUT">OUT</a>
+    <a class="btn" href="XI/X.room.CORE">CORE</a>
+  </div>
+
+  <div class="module">
+    <h2>RΩ – ROOM</h2>
+    <p>LAGE: Zentrum / Matrix</p>
+    <p>NC‑Zeichen: RΩ</p>
+    <a class="btn" href="ROOM/X.room.IN">IN</a>
+    <a class="btn" href="ROOM/X.room.OUT">OUT</a>
+    <a class="btn" href="ROOM/X.room.CORE">CORE</a>
+  </div>
+
+  <div class="module">
+    <h2>∪ – U</h2>
+    <p>LAGE: Ober‑Orbit / Ultra‑Navi</p>
+    <p>NC‑Zeichen: ∪</p>
+    <a class="btn" href="U/X.room.IN">IN</a>
+    <a class="btn" href="U/X.room.OUT">OUT</a>
+    <a class="btn" href="U/X.room.CORE">CORE</a>
+  </div>
+
+</div>
+
+</body>
+</html>
